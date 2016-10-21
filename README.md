@@ -8,7 +8,8 @@ Results auto-populate as you type into the search field.
 
 ## Screenshots
 
-<img width="700" alt="screen shot 2016-10-21 at 21 51 29" src="https://cloud.githubusercontent.com/assets/17990363/19611229/9756f6cc-97d8-11e6-8161-b720d39efb0f.png">
+<img width="700" alt="screen shot 2016-10-21 at 21 54 14" src="https://cloud.githubusercontent.com/assets/17990363/19611302/fbb61fa8-97d8-11e6-929b-44bd8d3811b4.png">
+
 
 
 
