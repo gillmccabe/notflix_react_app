@@ -1,0 +1,46 @@
+body{
+  font-family: sans-serif;
+  background-color: #EBF5FB;
+}
+
+ul{
+  list-style-type: none;
+
+}
+
+li{
+  float: left;
+  background-color: #20B2AA;
+  width: 95%;
+}
+
+li:nth-child(even){
+  float: left;
+  background-color: #b0e0e6;
+  width: 95%;
+}
+
+img {height:150px;
+    }
+
+.filmImage {
+  padding-top: 4%;
+  padding-left: 2%;
+  width:15%;
+  float:left;
+}  
+
+.filmText {
+
+  width:50%;
+  float:left;
+  
+}   
+
+.page-heading{
+  text-align: center;
+}
+
+.drop-down{
+  text-align: center;
+}
