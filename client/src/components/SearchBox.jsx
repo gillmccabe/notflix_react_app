@@ -31,17 +31,14 @@ var SearchBox = React.createClass({
   render: function(){
     return (
       <div className="drop-down">
-        <select onChange={this.handleSelect}>
-        <option selected disabled>Pick a Category</option>
-        <option value="actor">Actor</option>
-        <option value="director">Director</option>
-        <option value="title">Film</option>
-      </select>
-
-      <input type='text' id='userInput' onChange={this.handleButtonClick}/>
-    
-    </div>
-
+        <select id='selection' onChange={this.handleSelect}>
+          <option selected disabled>Pick a Category</option>
+          <option value="actor">Actor</option>
+          <option value="director">Director</option>
+          <option value="title">Film</option>
+        </select>
+        <input type='text' id='userInput' onChange={this.handleButtonClick}/>
+      </div>
       );
   }
 

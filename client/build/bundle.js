@@ -19815,6 +19815,7 @@
 	  console.log(props.films);
 	
 	  var films = props.films.map(function (film, index) {
+	
 	    return React.createElement(
 	      "li",
 	      { key: index, id: "li" },
@@ -19828,22 +19829,14 @@
 	        { className: "filmText" },
 	        React.createElement(
 	          "h4",
-	          null,
+	          { id: "film-title" },
 	          film.show_title
 	        ),
+	        React.createElement("hr", null),
 	        React.createElement(
 	          "p",
 	          null,
-	          film.release_year
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          film.category
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
+	          "Director: ",
 	          film.director
 	        ),
 	        React.createElement(
@@ -19908,7 +19901,7 @@
 	      { className: "drop-down" },
 	      React.createElement(
 	        "select",
-	        { onChange: this.handleSelect },
+	        { id: "selection", onChange: this.handleSelect },
 	        React.createElement(
 	          "option",
 	          { selected: true, disabled: true },
