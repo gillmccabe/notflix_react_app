@@ -19788,14 +19788,18 @@
 	      React.createElement(
 	        'h1',
 	        { className: 'page-heading' },
-	        ' Notflix '
+	        ' NOTFLIX '
 	      ),
 	      React.createElement(
-	        SearchBox,
-	        { requestFunction: this.getData },
-	        '    '
-	      ),
-	      React.createElement(FilmList, { films: this.state.results })
+	        'div',
+	        { id: 'sub-head' },
+	        React.createElement(
+	          SearchBox,
+	          { requestFunction: this.getData },
+	          '    '
+	        ),
+	        React.createElement(FilmList, { films: this.state.results })
+	      )
 	    );
 	  }
 	});
@@ -19806,7 +19810,7 @@
 /* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	var React = __webpack_require__(1);
 	
@@ -19817,39 +19821,42 @@
 	  var films = props.films.map(function (film, index) {
 	
 	    return React.createElement(
-	      "li",
-	      { key: index, id: "li" },
+	      'div',
+	      { id: 'item' },
 	      React.createElement(
-	        "div",
-	        { className: "filmImage" },
-	        React.createElement("img", { src: film.poster })
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: "filmText" },
+	        'li',
+	        { key: index, id: 'li' },
 	        React.createElement(
-	          "h4",
-	          { id: "film-title" },
-	          film.show_title
-	        ),
-	        React.createElement("hr", null),
-	        React.createElement(
-	          "p",
-	          null,
-	          "Director: ",
-	          film.director
+	          'div',
+	          { className: 'filmImage' },
+	          React.createElement('img', { src: film.poster })
 	        ),
 	        React.createElement(
-	          "p",
-	          null,
-	          film.summary
+	          'div',
+	          { className: 'filmText' },
+	          React.createElement(
+	            'h4',
+	            { id: 'film-title' },
+	            film.show_title
+	          ),
+	          React.createElement(
+	            'p',
+	            null,
+	            'Director: ',
+	            film.director
+	          ),
+	          React.createElement(
+	            'p',
+	            null,
+	            film.summary
+	          )
 	        )
 	      )
 	    );
 	  });
 	
 	  return React.createElement(
-	    "ul",
+	    'ul',
 	    null,
 	    films
 	  );

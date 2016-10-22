@@ -27,9 +27,11 @@ var NetflixBox = React.createClass({
   render: function(){
     return (
       <div>
-        <h1 className="page-heading"> Notflix </h1>
-        <SearchBox requestFunction={this.getData}>    </SearchBox>
-        <FilmList films={this.state.results}></FilmList>
+        <h1 className="page-heading"> NOTFLIX </h1>
+        <div id='sub-head'>
+          <SearchBox requestFunction={this.getData}>    </SearchBox>
+          <FilmList films={this.state.results}></FilmList>
+        </div>
       </div>
     )
   }
