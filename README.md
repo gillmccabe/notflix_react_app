@@ -1,4 +1,4 @@
-# Notflix React Project
+# Notflix React App
 
 Web app that allows you to search and display Netflix movie info. Built with Netflix API and React.
 
