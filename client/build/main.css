@@ -84,19 +84,43 @@ hr{
   background-color: rgba(0,0,0, 1);
 }
 
+#selection select{
+  background-color: #ffffff;
+  width: 298px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+}
+
+#selection {
+  width: 298px;
+  height: 34px;
+  overflow: hidden;
+  background: url(new_arrow.png) no-repeat right #ddd;
+  border: 1px solid #ccc;
+}
+
+#userInput {
+  background-color: #dddddd;
+  width: 298px;
+  height:28px;
+  border-radius: 3px;
+  margin-left:6%;
+  width: 150px;
+}
+
 .drop-down{
   text-align: center;
   padding-top: 2%;
-  width: 28%;
-  margin-left:35.5%;
+  width: 34%;
+  margin-left:32.5%;
   border: 3px solid #000000;
 }
 
 #selection{
-  width: 150px;
-}
-
-#userInput{
-  margin-left:6%;
   width: 150px;
 }
